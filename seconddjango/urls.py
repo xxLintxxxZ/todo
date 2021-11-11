@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from todoapp.views import TodoViewSet
+from todos.views import TodoViewSet
 
 # create a new router
 router = routers.DefaultRouter()
 # register our viewsets
-router.register(r'todos', TodoViewSet) #register "/todos" routes  
+router.register(r'todos', TodoViewSet) #register "/todos" routes
 #go to localhost:8000/todos/
 
 urlpatterns = [
